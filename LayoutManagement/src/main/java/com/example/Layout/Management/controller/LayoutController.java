@@ -52,5 +52,10 @@ public class LayoutController {
     public ResponseEntity<Layout> getUserLayout(@PathVariable Long userId) {
         return ResponseEntity.ok(layoutService.getUserLayout(userId));
     }
-
+    
+    
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<Layout> getUserLayout(@PathVariable Long userId) {
+        return ResponseEntity.ok(layoutService.getUserLayout(userId));
+    }
 }
